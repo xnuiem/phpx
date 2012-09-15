@@ -1,0 +1,60 @@
+yyaa_lx_file
+Field 			Type 		Null
+lx_file_id 		int(10) 	No
+lx_release_id 		int(10) 	No
+user_id 		int(10) 	No
+lx_file_name 		text 		No
+lx_file_type 		varchar(200) 	No
+lx_file_size 		int(10) 	No
+lx_file_data 		longtext 	Yes
+lx_file_date_added 	int(10) 	No
+lx_file_date_updated 	int(10) 	No
+
+
+yyaa_lx_project
+Field 			Type 		Null
+lx_project_id 		int(10) 	No
+user_id 		int(10) 	No
+lx_project_page_id	int(10)		No
+lx_project_name 	varchar(255) 	No
+lx_project_desc 	text 		No
+lx_project_url 		text 		No
+lx_project_donate_url	text 		No
+lx_project_date_added 	int(10) 	No
+lx_project_date_updated int(10) 	No
+lx_project_approved	tinyint(1)	No
+
+
+yyaa_lx_project_cat
+Field 			Type 		Null
+lx_project_cat_id 	int(10) 	No
+user_id			int(10)		No
+lx_project_id		int(10)		No
+lx_project_cat_name 	varchar(255) 	No
+lx_project_cat_approved	tinyint(1)	No
+
+
+yyaa_lx_project_cat_link
+Field 			Type 		Null
+lx_project_id 		int(10) 	No
+lx_project_cat_id 	int(10) 	No
+
+
+yyaa_lx_release
+Field 			Type 		Null
+lx_release_id 		int(10) 	No
+lx_project_id 		int(10) 	No
+user_id 		int(10) 	No
+lx_release_date 	int(10) 	No
+lx_release_version 	varchar(30) 	No
+lx_release_public 	tinyint(1) 	No
+lx_release_approved	tinyint(1)	No
+lx_release_notes	text		Yes
+lx_release_log		text		Yes
+
+
+yyaa_lx_user
+Field 			Type 		Null
+user_id 		int(10) 	No
+lx_project_id 		int(10) 	No
+lx_user_perm 		tinyint(1) 	No

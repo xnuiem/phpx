@@ -1,0 +1,29 @@
+#adbarxTitle { 
+    position: relative;
+    width: 1023px; 
+    height: 57px; 
+    background: transparent url(../../../themes/DoctorsInTraining/images/adDropdownBar.jpg) top center no-repeat;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+} 
+
+#adbarxTitle p { 
+    float: right; 
+    font: normal 21px arial, helvetica, sans-serif; 
+    color: #ffffff;
+    margin: 15px 70px 0 0;
+} 
+
+#adbarxContent {
+    display: none;
+    width: 1010px;
+    height: 400px;
+    padding: 5px;
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 1000;
+    background: #fff;
+    
+    
+}

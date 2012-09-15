@@ -1,0 +1,27 @@
+.form-field textarea { 
+    height: 90px; 
+}
+
+fieldset.bookx {
+    border: 1px solid black;
+    padding: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+fieldset.bookx legend {
+    border: 1px solid black;
+    padding: 1px 5px 1px 5px; 
+    font-weight: bold;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+div.bookxMessage { 
+    background-color:#FFEBE8;
+    border: 1px solid #CC0000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 8px;
+    padding: 5px;
+}

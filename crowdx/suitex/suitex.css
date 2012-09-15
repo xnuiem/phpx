@@ -1,0 +1,86 @@
+#dimmer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 500;
+    display: none;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7; 
+    -moz-opacity:0.70; 
+    filter: alpha(opacity=70); 
+}
+
+#alertWin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+    background: #FFFFFF;
+    text-align: left;
+    display: none;
+    z-index: 1000;
+    padding-top: 10px; 
+    margin-left: -300px;
+    margin-top: -250px;   
+    padding: 10px;
+    text-align: center; 
+    
+    
+}
+
+#noteWin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 500px;
+    border: 2px solid black;
+    background: #FFFFFF;
+    text-align: left;
+    display: none;
+    z-index: 1000;
+    padding-top: 10px; 
+    margin-left: -300px;
+    margin-top: -250px;   
+    padding: 10px;
+    text-align: center; 
+    
+    
+}
+
+#adjWin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 375px;
+    width: 500px;
+    border: 2px solid black;
+    background: #FFFFFF;
+    text-align: left;
+    display: none;
+    z-index: 1000;
+    padding-top: 10px; 
+    margin-left: -300px;
+    margin-top: -250px;   
+    padding: 10px;
+    text-align: center; 
+    
+    
+}
+
+form label { width: 13em; float: left; font-weight: bold; }
+em { font-weight: bold; padding-right: 1em; vertical-align: top; }
+label.error { float: none; color: red; padding-left: .5em; vertical-align: middle; }
+p { clear: both; }
+form input[type="text"] { width: 400px; }
+form select { width: 80px; }
+.suitexStatus {
+    color: #ff0000;
+    font-weight: bold;
+    padding: 5px 0 10px 5px;
+}

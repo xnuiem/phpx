@@ -1,0 +1,157 @@
+#phpxContainer label { width: 250px; float: left; font-weight: bold; }
+#phpxContainer em { font-weight: bold; padding-right: 1em; vertical-align: top; color: #ff0000; }
+#phpxContainer .error {
+    font-weight: normal;
+}
+
+#phpxContainer label.error { 
+    float: none; 
+    color: #ff0000;
+    font-weight: bold; 
+    padding-left: .5em; 
+    vertical-align: middle; 
+}
+
+#phpxContainer p { clear: both; }
+
+#phpxContainer .entry-content input, 
+#phpxContainer .entry-content select  { 
+    margin: 0; 
+}
+
+#phpxContainer fieldset {
+    border: 1px solid #DFDFDF;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#phpxContainer textarea { 
+    height: 200px;
+    width: 500px;
+}
+
+#phpxContainer fieldset legend {
+    border: 1px solid #DFDFDF;
+    padding: 5px 10px; 
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+
+
+#phpxContainer input, 
+#phpxContainer select {
+    color: #000000 !important;
+    padding: 2px 0;
+}
+
+#phpxContainer select {
+    
+    
+}
+
+#phpxContainer .inline td { 
+    width: 100px;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+
+#phpxContainer .inline input[type="text"] { 
+    width: 150px;
+}
+
+#phpxContainer .inline textarea { 
+    width: 250px;
+    height: 200px;
+}
+
+#phpxContainer input[type="submit"], 
+#phpxContainer input[type="button"] {
+    padding: 3px 8px; 
+}
+
+
+#phpxContainer input[type=text]  { 
+    width: 300px; 
+}
+
+#phpxContainer div.status { 
+    color: #FF0000;
+    font-weight: bold;
+    padding: 10px 0 10px 25px;
+}
+
+#dimmer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 500;
+    display: none;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7; 
+    -moz-opacity:0.70; 
+    filter: alpha(opacity=70); 
+}
+
+#confirmWin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 450px;
+    border: 2px solid black;
+    background: #FFFFFF;
+    text-align: left;
+    display: none;
+    z-index: 1000;
+    margin-left: -300px;
+    margin-top: -250px;   
+    padding: 0px;
+    text-align: center; 
+}
+
+#confirmWinText {
+    padding: 10px;
+    width: 100%;
+    height: 170px;
+}
+
+#buttonArea {
+    background-color: #D7D7D7;
+    width: 100%;
+    bottom: 0;
+    height: 30px;
+    text-align: right;
+    padding-top: 10px;
+    border-top: 1px solid #000000;
+}
+
+#alertWin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+    background: #FFFFFF;
+    text-align: left;
+    display: none;
+    z-index: 1000;
+    padding-top: 10px; 
+    margin-left: -300px;
+    margin-top: -250px;   
+    padding: 10px;
+    text-align: center; 
+}
+
+h4 span.addLink {
+    padding: 2px;
+    font-weight: normal;
+}
+
