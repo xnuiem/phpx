@@ -1,10 +1,10 @@
 === BookX ===
 Contributors: Xnuiem
-Donate link: http://www.thisrand.com
+Donate link: http://www.xmtek.net
 Tags: plugin, content
 Requires at least: 2.6
-Tested up to: 3.0.1
-Stable tag: 1.7
+Tested up to: 3.4.2
+Stable tag: 2.0
 
 A simple but powerful recommended book plugin.
 
@@ -27,6 +27,10 @@ all customizable from the easy to use admin interface.
 None Yet
 
 == Change Log ==
+<b>2.0</b><br />
+Updated plugin to use the PHPX Framework.<br />
+Updated a lot of the look & feel of the interface<br />
+
 <b>1.7</b><br />
 Fixed export bugs (<a href="http://code.google.com/p/suitex/issues/detail?id=61">Issue 61</a>)<br />
 Fixed require bug in suitex paging for list (<a href="http://code.google.com/p/suitex/issues/detail?id=62">Issue 62</a>)<br />

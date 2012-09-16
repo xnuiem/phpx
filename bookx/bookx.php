@@ -1,15 +1,14 @@
 <?php
 /*
 Plugin Name: bookX
-Plugin URI: http://www.thisrand.com/scripts/bookx
+Plugin URI: http://www.xmtek.net/software/wordpress-plugins/bookx/
 Description: Creates a recommended book list for both a sidebar widget and page based solely on ISBN numbers.
-Version: 1.7
-Author: Xnuiem
-Author URI: http://www.thisrand.com
-
+Version: 2.0
+Author: XM Tek
+Author URI: http://www.xmtek.net
 */
 
-/*  Copyright 2010 Xnuiem  (email : scripts @T thisrand D07 com)
+/*  Copyright 2012 XM Tek  
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -30,14 +29,10 @@ Author URI: http://www.thisrand.com
  * A recommended book plugin
  * @since 2.6
  */
-if ( ! defined( 'WP_CONTENT_URL' ) )
-      define( 'WP_CONTENT_URL', get_option( 'siteurl' ) . '/wp-content' );
-if ( ! defined( 'WP_CONTENT_DIR' ) )
-      define( 'WP_CONTENT_DIR', ABSPATH . 'wp-content' );
-if ( ! defined( 'WP_PLUGIN_URL' ) )
-      define( 'WP_PLUGIN_URL', WP_CONTENT_URL. '/plugins' );
-if ( ! defined( 'WP_PLUGIN_DIR' ) )
-      define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins' );
+if (!defined('WP_CONTENT_URL')){ define('WP_CONTENT_URL', get_option( 'siteurl' ) . '/wp-content' ); }
+if (!defined('WP_CONTENT_DIR')){ define('WP_CONTENT_DIR', ABSPATH . 'wp-content' ); }
+if (!defined('WP_PLUGIN_URL')){  define('WP_PLUGIN_URL', WP_CONTENT_URL. '/plugins' ); }
+if (!defined('WP_PLUGIN_DIR')){  define('WP_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins' ); }
       
 define(BOOKX_DIR, WP_PLUGIN_DIR . '/bookx/');  
 define(BOOKX_URL, WP_PLUGIN_URL . '/bookx/'); 
@@ -50,7 +45,7 @@ $obj                    = new bookx_functions();
 $obj->var               = $var;
 add_action('wp', array($obj, 'bookx_init'));
 
-if (substr_count($_SERVER["REQUEST_URI"], "wp-admin") != 0){  
+if (is_admin()){  
     require_once(BOOKX_DIR . 'includes/bookx_admin.php');
     $adminObj               = new bookx_admin();
     $adminObj->var          = $var;

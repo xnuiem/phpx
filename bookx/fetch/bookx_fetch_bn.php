@@ -17,20 +17,26 @@ class bookx_fetch_bn {
     function bookx_fetchItem($isbn){
 
 
-        $url = 'http://search.barnesandnoble.com/books/product.aspx?ean=' . $isbn;
+        $url = 'http://www.barnesandnoble.com/s/' . $isbn . '?keyword=' . $isbn . '&store=allproducts';
         
         
 
         if (function_exists('curl_exec')){
+            print("used CURL");
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url );
+            curl_setopt($ch, CURLOPT_HEADER, 1); 
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             $lines = curl_exec($ch);
+            echo curl_getinfo($ch, CURLINFO_HTTP_CODE);
             curl_close($ch); 
         }
         else {
             $lines = file_get_contents($url);
         }
+        print("HERE");
+        print($lines);
+        die();
 
         if (!$lines || $lines == ''){ return false; }
         $start = "<div class=\"preview\">";
